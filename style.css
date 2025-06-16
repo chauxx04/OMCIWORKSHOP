@@ -92,23 +92,54 @@ img {
     min-width: 400px;
 }
 
-table {
+#carrito table {
     width: 100%;
+    border-collapse: collapse;
+    background: transparent;
 }
 
-th, td {
-    color: white;
+#carrito th, #carrito td {
+    color: #fff;
+    padding: 8px 6px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    vertical-align: middle;
+    font-size: 15px;
 }
 
-.borrar {
-    background-color: black;
+#carrito th {
+    font-weight: bold;
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+#carrito td img {
+    max-width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#carrito .borrar {
+    background: #222;
+    color: #fff;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 4px 10px;
     text-decoration: none;
-    color: white;
-    font-weight: 800;
-    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    transition: background 0.2s;
 }
+#carrito .borrar:hover {
+    background: #c00;
+}
+
+#carrito th:nth-child(1), #carrito td:nth-child(1) { width: 70px; }
+#carrito th:nth-child(2), #carrito td:nth-child(2) { width: 140px; }
+#carrito th:nth-child(3), #carrito td:nth-child(3) { width: 60px; }
+#carrito th:nth-child(4), #carrito td:nth-child(4) { width: 90px; }
+#carrito th:nth-child(5), #carrito td:nth-child(5) { width: 40px; }
 
 .header-content {
     display: flex;
