@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER: Menú de navegación y logo -->
     <header class="header" id="inicio">
         <div class="menu container">
+            <!-- Logo que lleva al inicio -->
             <a href="#inicio" class="logo">OMCI</a>
+            <!-- Menú hamburguesa para móviles -->
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu-regular-24.png" class="menu-icono" alt="Menú de navegación">
             </label>
+            <!-- Navegación principal -->
             <nav class="navbar">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -23,6 +27,7 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
+            <!-- Carrito de compras (submenu) -->
             <div>
                 <ul>
                     <li class="submenu">
@@ -48,7 +53,7 @@
                 </ul>
             </div>
         </div>
-
+        <!-- Contenido principal del header -->
         <div class="header-content container">
             <div class="header-img">
                 <img src="images/img-oferta.jpg" alt="Oferta especial OMCI" loading="lazy">
@@ -60,102 +65,110 @@
         </div>
     </header>
 
-        <section class="products container" id="productos">
-            <h2>Productos</h2>
-            <div class="products-content">
-                <div class="product">
-                    <img src="images/tshirt1-acx.jpg" alt="T-Shirt Black">
-                    <div class="product-txt">
-                        <h3>T-Shirt Black</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="images/tshirt1-flx.jpg" alt="Elisyum">
-                    <div class="product-txt">
-                        <h3>Elisyum</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="images/tshirt2-flx.jpg" alt="Elisyum">
-                    <div class="product-txt">
-                        <h3>Elisyum</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="images/tshirt3-flx.jpg" alt="Elisyum">
-                    <div class="product-txt">
-                        <h3>Elisyum</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="images/tshirt4-flx.jpg" alt="Elisyum">
-                    <div class="product-txt">
-                        <h3>Elisyum</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <img src="images/tshirt5-flx.jpg" alt="Elisyum">
-                    <div class="product-txt">
-                        <h3>Elisyum</h3>
-                        <p>Calidad Premium</p>
-                        <p class="price">$100.000</p>
-                        <select class="talla">
-            <option value="S">Talla S</option>
-            <option value="M">Talla M</option>
-            <option value="L">Talla L</option>
-        </select>
-                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
-                    </div>
+    <!-- SECCIÓN DE PRODUCTOS -->
+    <section class="products container" id="productos">
+        <h2>Productos</h2>
+        <div class="products-content">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="images/tshirt1-acx.jpg" alt="T-Shirt Black">
+                <div class="product-txt">
+                    <h3>T-Shirt Black</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <!-- Selector de talla -->
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <!-- Botón para agregar al carrito -->
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al Carrito</a>
                 </div>
             </div>
-        </section>
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="images/tshirt1-flx.jpg" alt="Elisyum">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al Carrito</a>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="images/tshirt2-flx.jpg" alt="Elisyum">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al Carrito</a>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="images/tshirt3-flx.jpg" alt="Elisyum">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al Carrito</a>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="images/tshirt4-flx.jpg" alt="Elisyum">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al Carrito</a>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product">
+                <img src="images/tshirt5-flx.jpg" alt="Elisyum">
+                <div class="product-txt">
+                    <h3>Elisyum</h3>
+                    <p>Calidad Premium</p>
+                    <p class="price">$100.000</p>
+                    <select class="talla">
+                        <option value="S">Talla S</option>
+                        <option value="M">Talla M</option>
+                        <option value="L">Talla L</option>
+                    </select>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- SECCIÓN DE ICONOS/VENTAJAS -->
+    <h2 class="cuidado-titulo">¡Pa que cuide las prendas!</h2>
+    <div class="cuadro-cuidado">
         <section class="icon container">
+            <!-- Ventaja 1 -->
             <div class="icon-1">
                 <div class="icon-img">
                     <img src="images/gancho-ropa.png" alt="Icono 1">
@@ -165,7 +178,7 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
-
+            <!-- Ventaja 2 -->
             <div class="icon-1">
                 <div class="icon-img">
                     <img src="images/gancho-ropa.png" alt="Icono 2">
@@ -175,7 +188,7 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
-
+            <!-- Ventaja 3 -->
             <div class="icon-1">
                 <div class="icon-img">
                     <img src="images/gancho-ropa.png" alt="Icono 3">
@@ -186,57 +199,45 @@
                 </div>
             </div>
         </section>
+    </div>
 
-        <section class="blog container", id="sobre-omci">
-            <div class="blog-1">
-                <img src="images/blog1.jpg" alt="Blog 1">
-                <h3>Blog 1</h3>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
+    <!-- SECCIÓN SOBRE OMCI Y BLOG -->
+    <section class="blog container" id="sobre-omci">
+        <!-- Blog 1 -->
+        <div class="blog-1">
+            <img src="images/blog1.jpg" alt="Blog 1">
+            <h3>Blog 1</h3>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <!-- Blog 2 -->
+        <div class="blog-1">
+            <img src="images/blog2.jpg" alt="Blog 2">
+            <h3>Blog 2</h3>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+    </section>
 
-            <div class="blog-1">
-                <img src="images/blog2.jpg" alt="Blog 2">
-                <h3>Blog 2</h3>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer", id="contacto">
+    <!-- FOOTER: Contacto y redes sociales -->
+    <footer class="footer" id="contacto">
         <div class="footer-content container">
+            <!-- Redes sociales -->
             <div class="link">
                 <h3>Redes Sociales</h3>
                 <ul>
                     <li><a href="https://www.instagram.com/omciworkshop/">Instagram</a></li>
-                    <li><a href="">X</a></li>
-                    <li><a href="">Whatsapp</a></li>
-                    <li><a href="">Telegram</a></li>
                 </ul>
             </div>
-
+            <!-- Contactos -->
             <div class="link">
                 <h3>Contactos</h3>
                 <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">omci@gmai.com</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <!-- Script único con defer -->
+    <!-- Script principal -->
     <script src="script.js" defer></script>
 </body>
 </html>

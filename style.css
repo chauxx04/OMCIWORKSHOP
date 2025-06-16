@@ -1,5 +1,7 @@
+/* Importa fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Reset básico y reglas globales */
 * {
     margin: 0;
     padding: 0;
@@ -8,20 +10,23 @@
     list-style: none;
 }
 
+/* Fuente principal */
 body {
     font-family: "poppins", sans-serif;
-
 }
 
+/* Imágenes responsivas */
 img {
     max-width: 100%;
 }
 
+/* Contenedor principal centrado */
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Header principal */
 .header {
     display: flex;
     align-items: center;
@@ -30,6 +35,7 @@ img {
     padding: 70px 0;
 }
 
+/* Menú de navegación */
 .menu {
     position: absolute;
     top: 0;
@@ -40,6 +46,7 @@ img {
     justify-content: space-between;
 }
 
+/* Logo de la marca */
 .logo {
     font-size: 25px;
     color: black;
@@ -47,6 +54,7 @@ img {
     font-weight: 800;
 }
 
+/* Navegación principal */
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -59,6 +67,7 @@ img {
     display: block;
 }
 
+/* Menú hamburguesa (oculto por defecto) */
 #menu {
     display: none;
 }
@@ -72,6 +81,7 @@ img {
     display: none;
 }
 
+/* Submenú para el carrito */
 .submenu {
     position: relative;
 }
@@ -80,6 +90,7 @@ img {
     display: none;
 }
 
+/* Muestra el carrito al pasar el mouse */
 .submenu:hover #carrito {
     display: block;
     position: absolute;
@@ -92,6 +103,7 @@ img {
     min-width: 400px;
 }
 
+/* Tabla del carrito */
 #carrito table {
     width: 100%;
     border-collapse: collapse;
@@ -120,6 +132,7 @@ img {
     margin: 0 auto;
 }
 
+/* Botón eliminar producto del carrito */
 #carrito .borrar {
     background: #222;
     color: #fff;
@@ -135,12 +148,14 @@ img {
     background: #c00;
 }
 
+/* Ancho de columnas del carrito */
 #carrito th:nth-child(1), #carrito td:nth-child(1) { width: 70px; }
 #carrito th:nth-child(2), #carrito td:nth-child(2) { width: 140px; }
 #carrito th:nth-child(3), #carrito td:nth-child(3) { width: 60px; }
 #carrito th:nth-child(4), #carrito td:nth-child(4) { width: 90px; }
 #carrito th:nth-child(5), #carrito td:nth-child(5) { width: 40px; }
 
+/* Contenido del header */
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -169,6 +184,7 @@ img {
     margin-bottom: 20px;
 }
 
+/* Botón principal */
 .btn-1 {
     display: inline-block;
     padding: 11px 25px;
@@ -177,6 +193,7 @@ img {
     border-radius: 5px;
 }
 
+/* Título de oferta */
 .ofert-txt h3 {
     color: black;
     font-family: "Oswaldo", sans-serif;
@@ -185,6 +202,7 @@ img {
     margin-bottom: 15px;
 }
 
+/* Botón secundario */
 .btn-2 {
     display: inline-block;
     padding: 7px 10px;
@@ -194,8 +212,9 @@ img {
     font-size: 15px;
 }
 
+/* Sección de productos */
 .products {
-    padding: 50px 0;
+    padding: 50px 0 60px 0;
     text-align: center;
 }
 
@@ -213,6 +232,7 @@ img {
     gap: 50px;
 }
 
+/* Tarjeta de producto */
 .product {
     text-align: center;
     padding: 30px;
@@ -243,6 +263,7 @@ img {
     font-weight: 800;
 }
 
+/* Sección de iconos/ventajas */
 .icon {
     padding: 50px 0 100px 0;
     display: flex;
@@ -270,6 +291,7 @@ img {
     color: black;
 }
 
+/* Sección de blog */
 .blog {
     display: flex;
     justify-content: space-between;
@@ -297,6 +319,7 @@ img {
     color: black;
 }
 
+/* Footer */
 .footer {
     padding: 50px;
     background-color: black;
@@ -322,10 +345,11 @@ img {
     margin-bottom: 10px;
 }
 
+/* Responsive: Ajustes para pantallas pequeñas */
 @media (max-width:991px) {
 
     .menu {
-    padding: 20px;
+        padding: 20px;
     }
 
     .menu label {
@@ -435,4 +459,55 @@ img {
         flex-direction: column;
         text-align: center;
     }
+}
+/* Estilo para el selector de tallas similar al botón */
+.talla {
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 130px; /* Ajusta el ancho si lo deseas igual al botón */
+}
+
+.talla:focus {
+    outline: 2px solid #fff;
+    background-color: #222;
+}
+
+/* Título de la sección de cuidados */
+.cuidado-titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    margin: 60px 0 30px 0;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+/* Tamaño uniforme para los iconos de cuidado */
+.icon-img img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.cuadro-cuidado {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 20px;
+    margin: 40px auto 60px auto;
+    max-width: 1100px;
+}
+
+.icon.container {
+    margin-bottom: 0; /* Elimina margen extra si lo tienes */
 }
