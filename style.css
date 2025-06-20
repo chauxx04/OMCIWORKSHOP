@@ -54,6 +54,21 @@ img {
     font-weight: 800;
 }
 
+.logo-mobile {
+    display: none;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0; right: 0;
+    text-align: center;
+    top: 18px; /* Ajusta según tu header */
+    z-index: 10;
+}
+
 /* Navegación principal */
 .menu .navbar ul li {
     position: relative;
@@ -164,6 +179,19 @@ img {
     padding: 0 200px;
 }
 
+.header-img {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.header-img img {
+    width: 400px;
+    max-width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 .header-txt {
     flex-basis: 50%;
     text-align: center;
@@ -237,6 +265,8 @@ img {
     text-align: center;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    background: #fff;
+    border-radius: 10px;
 }
 
 .product img {
@@ -263,20 +293,79 @@ img {
     font-weight: 800;
 }
 
-/* Sección de iconos/ventajas */
-.icon {
-    padding: 50px 0 100px 0;
+/* Selector de tallas igual al botón */
+.talla {
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 130px;
+}
+.talla:focus {
+    outline: 2px solid #fff;
+    background-color: #222;
+}
+
+/* Cuadro de recomendaciones de cuidado */
+.cuadro-cuidado {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 40px 20px;
+    margin: 60px auto 60px auto;
+    max-width: 1100px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+/* Título de la sección de cuidados */
+.cuidado-titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    margin: 60px 0 30px 0;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+/* Iconos de cuidado */
+.icon.container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
+    gap: 20px;
 }
 
 .icon-1 {
     flex-basis: calc(33.3% - 30px);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 25px;
     background-color: white;
+    border-radius: 10px;
+}
+
+.icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.icon-img img,
+.icon-1 img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 18px auto;
 }
 
 .icon-txt h3 {
@@ -284,11 +373,13 @@ img {
     color: black;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .icon-txt p {
     font-size: 16px;
     color: black;
+    text-align: center;
 }
 
 /* Sección de blog */
@@ -345,8 +436,17 @@ img {
     margin-bottom: 10px;
 }
 
+
+
 /* Responsive: Ajustes para pantallas pequeñas */
 @media (max-width:991px) {
+
+    .logo-mobile {
+        display: block;
+    }
+    .logo {
+        display: none !important;
+    }
 
     .menu {
         padding: 20px;
@@ -395,7 +495,16 @@ img {
     }
 
     .header-img {
-        display: none;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header-img img {
+        width: 80vw;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .header-txt {
@@ -424,13 +533,13 @@ img {
     }
 
     .products-content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .product img {
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
     }
 
     .icons {
@@ -460,54 +569,23 @@ img {
         text-align: center;
     }
 }
-/* Estilo para el selector de tallas similar al botón */
-.talla {
-    padding: 7px 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: background 0.2s;
-    width: 130px; /* Ajusta el ancho si lo deseas igual al botón */
-}
 
-.talla:focus {
-    outline: 2px solid #fff;
-    background-color: #222;
-}
-
-/* Título de la sección de cuidados */
-.cuidado-titulo {
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Oswald", sans-serif;
-    margin: 60px 0 30px 0;
-    letter-spacing: 2px;
-    color: #222;
-}
-
-/* Tamaño uniforme para los iconos de cuidado */
-.icon-img img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-
-.cuadro-cuidado {
-    background: #fff;
-    border: 2px solid #ddd;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    padding: 40px 20px;
-    margin: 40px auto 60px auto;
-    max-width: 1100px;
-}
-
-.icon.container {
-    margin-bottom: 0; /* Elimina margen extra si lo tienes */
-}
+/* Responsive: Ajuste para móviles pequeños */
+@media (max-width:700px) {
+    .cuadro-cuidado {
+        padding: 20px 5px;
+        margin: 30px 0 40px 0;
+        width: 99%;
+    }
+    .icon.container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .icon-1 {
+        width: 100%;
+        justify-content: center;
+    }
+    .products-content {
+        grid-template-columns: 1fr;
+    }
