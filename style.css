@@ -173,15 +173,19 @@ img {
 /* Contenido del header */
 .header-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex: 1;
     padding: 0 200px;
 }
 
 .header-img {
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0 20px;
     text-align: center;
 }
 .header-img img {
@@ -258,6 +262,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+    justify-content: center;
 }
 
 /* Tarjeta de producto */
@@ -322,6 +327,10 @@ img {
     max-width: 1100px;
     width: 95%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Título de la sección de cuidados */
@@ -337,9 +346,11 @@ img {
 /* Iconos de cuidado */
 .icon.container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: center;
+    align-items: stretch;
+    margin: 60px auto 60px auto;
     gap: 20px;
+    width: 100%;
 }
 
 .icon-1 {
@@ -347,6 +358,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 25px;
     background-color: white;
     border-radius: 10px;
@@ -385,7 +397,10 @@ img {
 /* Sección de blog */
 .blog {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    gap: 40px;
     padding-bottom: 100px;
 }
 
@@ -441,9 +456,6 @@ img {
 /* Responsive: Ajustes para pantallas pequeñas */
 @media (max-width:991px) {
 
-    .logo-mobile {
-        display: block;
-    }
     .logo {
         display: none !important;
     }
@@ -540,6 +552,22 @@ img {
     .product img {
         width: 120px;
         height: 120px;
+    }
+
+
+    .product-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .talla,
+    .agregar-carrito.btn-2 {
+        width: 130px;
+        display: inline-block;
+        margin-right: 0;
+        box-sizing: border-box;
     }
 
     .icons {
